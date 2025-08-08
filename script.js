@@ -1,0 +1,480 @@
+// Restaurant data organized by category
+const restaurantData = {
+  sitDown: [
+    "44 North",
+    "Acoustic Café",
+    "Albertville Tavern",
+    "Amber Inn Bar & Grill",
+    "Applebee's Grill + Bar",
+    "Azul Tequila Bar & Grill",
+    "Black Bear Bar & Grill",
+    "Bridgewater Restaurant & Pub",
+    "Buffalo Wild Wings",
+    "Burrachos Fresh Mexican Grill",
+    "Cancun Mexican Grill",
+    "Casa Margarita",
+    "Casa Mexicana",
+    "Cast Iron Pizza Co.",
+    "Chick-A-Dee's Family Restaurant",
+    "Chippewa Family Restaurant",
+    "Chopsticks Lake Hallie",
+    "City Eats at the Metropolis Resort",
+    "Court'N House - Bar & Grill",
+    "Do-Dodge-Inn",
+    "Dooley's Pub",
+    "Eau Claire Ale House",
+    "Egg Roll Plus",
+    "Every Buddy's Bar & Grill",
+    "Famous Dave's Bar-B-Que",
+    "Fella's Loaded Goat Restaurant & Bar",
+    "Galloway Grille",
+    "Golden Dragon Chinese Restaurant",
+    "Golden Spike Bar & Grill",
+    "Grub Fusion Diner",
+    "Gyro King",
+    "Hangar 54 Grill",
+    "Houligans Steak & Seafood Pub",
+    "Jade Garden",
+    "Johnny's Italian Steakhouse",
+    "Juanita's Mexican Restaurant",
+    "La Poblanita",
+    "Leona's Pizzeria",
+    "Loopy's Grill & Saloon",
+    "Manny's Cocina",
+    "Milwaukee Burger Company - Eau Claire",
+    "Mogie's Pub",
+    "Mom's Kitchen",
+    "Mona Lisa's Restaurant",
+    "Mueang Thai Restaurant",
+    "Ninja Japanese and Chinese Restaurant",
+    "Olive Garden Italian Restaurant",
+    "Olympic Flame",
+    "Perkins American Food Co.",
+    "Pizza Del Re",
+    "Pizza Ranch",
+    "Princeton Valley Golf - Bar - Grill",
+    "Randy's Family Restaurant",
+    "Red Lobster",
+    "Red Robin Gourmet Burgers and Brews",
+    "Red Zone Sports Bar",
+    "River Inn Bar",
+    "River Jams",
+    "Sakura Japanese Cuisine",
+    "Sammy's Pizza Restaurant & Pub",
+    "SandBar and Grill, LLC",
+    "Schuetzy's Tavern",
+    "Shanghai Bistro",
+    "Sheeley House Saloon",
+    "Silly Serrano Mexican Restaurant",
+    "Stella Blues",
+    "Sweeney's Pub & Grub",
+    "Thai Orchid Restaurant",
+    "The Alibi Lounge",
+    "The French Press",
+    "The Informalist",
+    "The Livery Restaurant & Saloon",
+    "The Nucleus",
+    "The Plus",
+    "The Pourhouse",
+    "The Sawmill Bar & Grill",
+    "Thirsty Badger Sports Bar & Grill",
+    "The VFW",
+    "Valley Burger Company",
+    "Vino Cappuccino Artisan Bistro",
+    "Wagner's Lanes & The Complexx",
+    "West Hill Bar & Grill",
+    "Wheaton Family Restaurant",
+    "Wild Ridge Golf & Event Center",
+    "Wissota Chophouse - Chippewa Falls",
+    "Dragonetti's",
+    "Bijou Bistro",
+    "Altoona Family Restaurant",
+    "Hotpot Barbeque and Sushi",
+    "Chako",
+    "Rancho Grande",
+    "Encanto Cantina",
+    "Guac N Roll",
+  ],
+
+  pizza: [
+    "Buzzy's Pizza Emporium",
+    "Cast Iron Pizza Co.",
+    "Domino's Pizza",
+    "Geno's Pizza",
+    "Godfather's Pizza",
+    "Hunt Brothers Pizza",
+    "Jimbob's Pizza",
+    "Johnny's Pizza Shop",
+    "Little Caesars Pizza",
+    "Papa Johns Pizza",
+    "Papa Murphy's | Take 'N' Bake Pizza",
+    "Pizza Del Re",
+    "Pizza Hut",
+    "Pizza Ranch",
+    "Sammy's Pizza Restaurant & Pub",
+    "Tony Capony Pizza",
+    "Toppers Pizza",
+  ],
+
+  asian: [
+    "Chopsticks Lake Hallie",
+    "Egg Roll Plus",
+    "Golden Dragon Chinese Restaurant",
+    "Grub Fusion Diner",
+    "Hawaii Poke Bowl",
+    "Jade Garden",
+    "Mueang Thai Restaurant",
+    "Ninja Japanese and Chinese Restaurant",
+    "Sakura Japanese Cuisine",
+    "Shanghai Bistro",
+    "Thai Orchid Restaurant",
+    "Hotpot Barbeque and Sushi",
+    "Chako",
+  ],
+
+  mexican: [
+    "Juanita's Mexican Restaurant",
+    "La Poblanita",
+    "Manny's Cocina",
+    "Silly Serrano Mexican Restaurant",
+    "Taco Bell",
+    "Rancho Grande",
+    "Encanto Cantina",
+    "Taco John's",
+    "Guac N Roll",
+    "Chipotle Mexican Grill",
+    "Casa Mexicana",
+    "Casa Margarita",
+    "Cancun Mexican Grill",
+    "Burrito Xpress",
+    "Azul Tequila Bar & Grill",
+    "Burrachos Fresh Mexican Grill",
+  ],
+
+  fastFood: [
+    "Arby's",
+    "Burger King",
+    "Chipotle Mexican Grill",
+    "Culver's",
+    "Dairy Queen Grill & Chill",
+    "Erbert and Gerberts",
+    "Fazoli's",
+    "Hardee's",
+    "Jersey Mike's Subs",
+    "Jimmy John's",
+    "KFC",
+    "McDonald's",
+    "Panera Bread",
+    "Subway",
+    "Taco Bell",
+    "Wendy's",
+    "Taco John's",
+  ],
+
+  tavern: [
+    "44 North",
+    "Albertville Tavern",
+    "Amber Inn Bar & Grill",
+    "Court'N House - Bar & Grill",
+    "Do-Dodge-Inn",
+    "Eau Claire Ale House",
+    "Every Buddy's Bar & Grill",
+    "Fella's Loaded Goat Restaurant & Bar",
+    "Golden Spike Bar & Grill",
+    "Loopy's Grill & Saloon",
+    "Mogie's Pub",
+    "Princeton Valley Golf - Bar - Grill",
+    "Red Zone Sports Bar",
+    "River Inn Bar",
+    "River Jams",
+    "SandBar and Grill, LLC",
+    "Schuetzy's Tavern",
+    "Sheeley House Saloon",
+    "The Livery Restaurant & Saloon",
+    "The Plus",
+    "The Sawmill Bar & Grill",
+    "Thirsty Badger Sports Bar & Grill",
+    "The VFW",
+    "Valley Burger Company",
+    "West Hill Bar & Grill",
+    "Wild Ridge Golf & Event Center",
+  ],
+
+  takeout: [
+    "Acoustic Café",
+    "Buffalo Wild Wings",
+    "Burrito Xpress",
+    "Buzzy's Pizza Emporium",
+    "Cancun Mexican Grill",
+    "Casa Margarita",
+    "Casa Mexicana",
+    "Cast Iron Pizza Co.",
+    "Chopsticks Lake Hallie",
+    "Domino's Pizza",
+    "Egg Roll Plus",
+    "Famous Dave's Bar-B-Que",
+    "Geno's Pizza",
+    "Godfather's Pizza",
+    "Golden Dragon Chinese Restaurant",
+    "Grub Fusion Diner",
+    "Gyro King",
+    "Hangar 54 Grill",
+    "Hawaii Poke Bowl",
+    "Houligans Steak & Seafood Pub",
+    "Hunt Brothers Pizza",
+    "Jimbob's Pizza",
+    "Johnny's Pizza Shop",
+    "Leona's Pizzeria",
+    "Little Caesars Pizza",
+    "Mueang Thai Restaurant",
+    "Ninja Japanese and Chinese Restaurant",
+    "Noodles and Company",
+    "Olympic Flame",
+    "Papa Johns Pizza",
+    "Papa Murphy's | Take 'N' Bake Pizza",
+    "Pizza Hut",
+    "Princeton Valley Golf - Bar - Grill",
+    "Red Robin Gourmet Burgers and Brews",
+    "Roadside Ice Cream and Diner",
+    "Shanghai Bistro",
+    "Silly Serrano Mexican Restaurant",
+    "Sweeney's Pub & Grub",
+    "Tony Capony Pizza",
+    "Thai Orchid Restaurant",
+    "Toppers Pizza",
+    "Valley Burger Company",
+    "Guac N Roll",
+  ],
+
+  dateNight: [
+    "44 North",
+    "Johnny's Italian Steakhouse",
+    "Manny's Cocina",
+    "Mona Lisa's Restaurant",
+    "Ninja Japanese and Chinese Restaurant",
+    "Olive Garden Italian Restaurant",
+    "Red Lobster",
+    "Sakura Japanese Cuisine",
+    "Shanghai Bistro",
+    "Sheeley House Saloon",
+    "Stella Blues",
+    "The Informalist",
+    "The Livery Restaurant & Saloon",
+    "Valley Burger Company",
+    "Vino Cappuccino Artisan Bistro",
+    "Wild Ridge Golf & Event Center",
+    "Wissota Chophouse - Chippewa Falls",
+    "Dragonetti's",
+    "Bijou Bistro",
+  ],
+
+  allRestaurants: [
+    "4 Mile Restaurant & Bar",
+    "44 North",
+    "Acoustic Café",
+    "Albertville Tavern",
+    "Amber Inn Bar & Grill",
+    "Applebee's Grill + Bar",
+    "Arby's",
+    "Azul Tequila Bar & Grill",
+    "Black Bear Bar & Grill",
+    "Bridgewater Restaurant & Pub",
+    "Buffalo Wild Wings",
+    "Burger King",
+    "Burrachos Fresh Mexican Grill",
+    "Burrito Xpress",
+    "Buzzy's Pizza Emporium",
+    "Cancun Mexican Grill",
+    "Casa Margarita",
+    "Casa Mexicana",
+    "Cast Iron Pizza Co.",
+    "Chick-A-Dee's Family Restaurant",
+    "Chipotle Mexican Grill",
+    "Chippewa Family Restaurant",
+    "Chopsticks Lake Hallie",
+    "City Eats at the Metropolis Resort",
+    "Court'N House - Bar & Grill",
+    "Culver's",
+    "Dairy Queen Grill & Chill",
+    "Do-Dodge-Inn",
+    "Domino's Pizza",
+    "Dooley's Pub",
+    "Eau Claire Ale House",
+    "Egg Roll Plus",
+    "Erbert and Gerberts",
+    "Every Buddy's Bar & Grill",
+    "Famous Dave's Bar-B-Que",
+    "Fazoli's",
+    "Fella's Loaded Goat Restaurant & Bar",
+    "Galloway Grille",
+    "Geno's Pizza",
+    "Godfather's Pizza",
+    "Golden Dragon Chinese Restaurant",
+    "Golden Spike Bar & Grill",
+    "Grub Fusion Diner",
+    "Gyro King",
+    "Hangar 54 Grill",
+    "Hardee's",
+    "Hawaii Poke Bowl",
+    "Houligans Steak & Seafood Pub",
+    "Hunt Brothers Pizza",
+    "Jade Garden",
+    "Jersey Mike's Subs",
+    "Jimbob's Pizza",
+    "Jimmy John's",
+    "Johnny's Italian Steakhouse",
+    "Johnny's Pizza Shop",
+    "Juanita's Mexican Restaurant",
+    "KFC",
+    "La Poblanita",
+    "Leona's Pizzeria",
+    "Little Caesars Pizza",
+    "Loopy's Grill & Saloon",
+    "Manny's Cocina",
+    "McDonald's",
+    "Milwaukee Burger Company - Eau Claire",
+    "Mogie's Pub",
+    "Mom's Kitchen",
+    "Mona Lisa's Restaurant",
+    "Mueang Thai Restaurant",
+    "Ninja Japanese and Chinese Restaurant",
+    "Noodles and Company",
+    "Olive Garden Italian Restaurant",
+    "Olympic Flame",
+    "Panera Bread",
+    "Papa Johns Pizza",
+    "Papa Murphy's | Take 'N' Bake Pizza",
+    "Perkins American Food Co.",
+    "Pizza Del Re",
+    "Pizza Hut",
+    "Pizza Ranch",
+    "Princeton Valley Golf - Bar - Grill",
+    "Randy's Family Restaurant",
+    "Red Lobster",
+    "Red Robin Gourmet Burgers and Brews",
+    "Red Zone Sports Bar",
+    "River Inn Bar",
+    "River Jams",
+    "Roadside Ice Cream and Diner",
+    "Sakura Japanese Cuisine",
+    "Sammy's Pizza Restaurant & Pub",
+    "SandBar and Grill, LLC",
+    "Schuetzy's Tavern",
+    "Shanghai Bistro",
+    "Sheeley House Saloon",
+    "Silly Serrano Mexican Restaurant",
+    "Stella Blues",
+    "Subway",
+    "Sweeney's Pub & Grub",
+    "Tony Capony Pizza",
+    "Taco Bell",
+    "Thai Orchid Restaurant",
+    "The Alibi Lounge",
+    "The French Press",
+    "The Informalist",
+    "The Livery Restaurant & Saloon",
+    "The Nucleus",
+    "The Plus",
+    "The Pourhouse",
+    "The Sawmill Bar & Grill",
+    "Thirsty Badger Sports Bar & Grill",
+    "Toppers Pizza",
+    "The VFW",
+    "Valley Burger Company",
+    "Vino Cappuccino Artisan Bistro",
+    "Wagner's Lanes & The Complexx",
+    "Wendy's",
+    "West Hill Bar & Grill",
+    "Wheaton Family Restaurant",
+    "Wild Ridge Golf & Event Center",
+    "Wissota Chophouse - Chippewa Falls",
+    "Dragonetti's",
+    "Bijou Bistro",
+    "Altoona Family Restaurant",
+    "Hotpot Barbeque and Sushi",
+    "Chako",
+    "Rancho Grande",
+    "Encanto Cantina",
+    "Taco John's",
+    "Guac N Roll",
+  ],
+};
+
+// DOM elements
+const categorySelect = document.getElementById("category-select");
+const findButton = document.getElementById("find-restaurants-btn");
+const restaurantCards = [
+  document.getElementById("restaurant-1"),
+  document.getElementById("restaurant-2"),
+  document.getElementById("restaurant-3"),
+];
+
+// Function to get 3 random restaurants from a category
+function getRandomRestaurants(category) {
+  const restaurants = restaurantData[category];
+  if (!restaurants || restaurants.length === 0) {
+    return [];
+  }
+
+  // Create a copy of the array to avoid modifying the original
+  const availableRestaurants = [...restaurants];
+  const selectedRestaurants = [];
+
+  // Select up to 3 random restaurants
+  for (let i = 0; i < 3 && availableRestaurants.length > 0; i++) {
+    const randomIndex = Math.floor(Math.random() * availableRestaurants.length);
+    selectedRestaurants.push(availableRestaurants.splice(randomIndex, 1)[0]);
+  }
+
+  return selectedRestaurants;
+}
+
+// Function to display restaurants in the cards
+function displayRestaurants(restaurants) {
+  restaurantCards.forEach((card, index) => {
+    if (restaurants[index]) {
+      card.innerHTML = restaurants[index];
+      card.classList.add("populated");
+    } else {
+      card.innerHTML =
+        '<div class="placeholder">No more restaurants in this category</div>';
+      card.classList.remove("populated");
+    }
+  });
+}
+
+// Function to clear restaurant display
+function clearRestaurants() {
+  restaurantCards.forEach((card) => {
+    card.innerHTML =
+      '<div class="placeholder">Select a category and click "Find Restaurants"</div>';
+    card.classList.remove("populated");
+  });
+}
+
+// Event listeners
+categorySelect.addEventListener("change", function () {
+  const selectedCategory = this.value;
+
+  if (selectedCategory) {
+    findButton.disabled = false;
+  } else {
+    findButton.disabled = true;
+    clearRestaurants();
+  }
+});
+
+findButton.addEventListener("click", function () {
+  const selectedCategory = categorySelect.value;
+
+  if (selectedCategory && restaurantData[selectedCategory]) {
+    const randomRestaurants = getRandomRestaurants(selectedCategory);
+    displayRestaurants(randomRestaurants);
+  }
+});
+
+// Initialize the app
+document.addEventListener("DOMContentLoaded", function () {
+  // Ensure button starts disabled
+  findButton.disabled = true;
+});

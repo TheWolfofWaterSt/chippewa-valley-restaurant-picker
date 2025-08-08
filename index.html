@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chippewa Valley Restaurant Picker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Chippewa Valley Restaurant Picker</h1>
+      </header>
+
+      <main>
+        <div class="picker-section">
+          <label for="category-select">Choose a category:</label>
+          <select id="category-select">
+            <option value="">Select a category...</option>
+            <option value="sitDown">Sit Down</option>
+            <option value="pizza">Pizza</option>
+            <option value="asian">Asian</option>
+            <option value="mexican">Mexican</option>
+            <option value="fastFood">Fast Food</option>
+            <option value="tavern">Tavern</option>
+            <option value="takeout">Takeout</option>
+            <option value="dateNight">Date Night</option>
+            <option value="allRestaurants">All Restaurants</option>
+          </select>
+
+          <div class="restaurant-results">
+            <div class="restaurant-card" id="restaurant-1">
+              <div class="placeholder">
+                Select a category and click "Find Restaurants"
+              </div>
+            </div>
+            <div class="restaurant-card" id="restaurant-2">
+              <div class="placeholder">
+                Select a category and click "Find Restaurants"
+              </div>
+            </div>
+            <div class="restaurant-card" id="restaurant-3">
+              <div class="placeholder">
+                Select a category and click "Find Restaurants"
+              </div>
+            </div>
+          </div>
+
+          <button id="find-restaurants-btn" disabled>Find Restaurants</button>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
