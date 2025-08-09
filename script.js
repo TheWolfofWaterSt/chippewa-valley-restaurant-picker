@@ -94,6 +94,11 @@ const restaurantData = {
     "Rancho Grande",
     "Encanto Cantina",
     "Guac N Roll",
+    "Phoenix Taproom and Kitchen",
+    "Madden Ramen",
+    "Texas Roadhouse",
+    "Northern Taphouse",
+    "Fuji",
   ],
 
   pizza: [
@@ -130,6 +135,8 @@ const restaurantData = {
     "Thai Orchid Restaurant",
     "Hotpot Barbeque and Sushi",
     "Chako",
+    "Fuji",
+    "Madden Ramen",
   ],
 
   mexican: [
@@ -244,6 +251,7 @@ const restaurantData = {
     "Toppers Pizza",
     "Valley Burger Company",
     "Guac N Roll",
+    "Madden Ramen",
   ],
 
   dateNight: [
@@ -266,6 +274,9 @@ const restaurantData = {
     "Wissota Chophouse - Chippewa Falls",
     "Dragonetti's",
     "Bijou Bistro",
+    "Fuji",
+    "Texas Roadhouse",
+    "Northern Taphouse",
   ],
 
   allRestaurants: [
@@ -397,6 +408,11 @@ const restaurantData = {
     "Encanto Cantina",
     "Taco John's",
     "Guac N Roll",
+    "Phoenix Taproom and Kitchen",
+    "Madden Ramen",
+    "Texas Roadhouse",
+    "Northern Taphouse",
+    "Fuji",
   ],
 };
 
