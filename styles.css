@@ -19,6 +19,8 @@ body {
   margin: 0 auto;
   padding: 20px;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Header */
@@ -116,9 +118,9 @@ select:focus {
 }
 
 .restaurant-card.populated {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #d2b48c 0%, #c19a6b 100%);
   color: white;
-  border-color: #667eea;
+  border-color: #d2b48c;
   font-size: 1.1rem;
 }
 
@@ -129,12 +131,12 @@ select:focus {
 
 /* Button */
 button {
-  padding: 12px 20px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 16px 32px;
+  background: linear-gradient(135deg, #d2b48c 0%, #c19a6b 100%);
   color: white;
   border: none;
   border-radius: 8px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -144,7 +146,7 @@ button {
 
 button:hover:not(:disabled) {
   transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 6px 12px rgba(210, 180, 140, 0.3);
 }
 
 button:active:not(:disabled) {
@@ -155,6 +157,15 @@ button:disabled {
   background: #6c757d;
   cursor: not-allowed;
   opacity: 0.6;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: auto;
+  padding: 2rem 0;
+  color: #6c757d;
+  font-size: 0.9rem;
 }
 
 /* Tablet styles */
@@ -210,6 +221,10 @@ button:disabled {
     font-size: 1.2rem;
   }
 
+  .restaurant-card.populated {
+    font-size: 2.2rem;
+  }
+
   select,
   button {
     font-size: 1.1rem;
@@ -231,5 +246,9 @@ button:disabled {
     min-height: 120px;
     padding: 2.5rem;
     font-size: 1.3rem;
+  }
+
+  .restaurant-card.populated {
+    font-size: 2.5rem;
   }
 }
