@@ -32,6 +32,15 @@ h1 {
   color: #2c3e50;
   font-weight: 600;
   line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #6c757d;
+  line-height: 1.5;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 /* Main content */
@@ -156,8 +165,9 @@ button:disabled {
   }
 
   .restaurant-card {
-    min-height: 70px;
-    padding: 1.2rem;
+    min-height: 80px;
+    padding: 1.5rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -174,18 +184,19 @@ button:disabled {
   }
 
   .picker-section {
-    max-width: 600px;
+    max-width: 700px;
     padding: 2.5rem;
   }
 
   .restaurant-results {
-    flex-direction: row;
+    flex-direction: column;
     gap: 1.5rem;
   }
 
   .restaurant-card {
-    flex: 1;
-    min-height: 80px;
+    min-height: 100px;
+    padding: 2rem;
+    font-size: 1.2rem;
   }
 
   select,
@@ -201,7 +212,13 @@ button:disabled {
   }
 
   .picker-section {
-    max-width: 800px;
+    max-width: 900px;
     padding: 3rem;
+  }
+
+  .restaurant-card {
+    min-height: 120px;
+    padding: 2.5rem;
+    font-size: 1.3rem;
   }
 }
