@@ -99,6 +99,7 @@ const restaurantData = {
     "Texas Roadhouse",
     "Northern Taphouse",
     "Fuji",
+    "Mancino's",
   ],
 
   pizza: [
@@ -252,6 +253,7 @@ const restaurantData = {
     "Valley Burger Company",
     "Guac N Roll",
     "Madden Ramen",
+    "Mancino's",
   ],
 
   dateNight: [
@@ -413,6 +415,7 @@ const restaurantData = {
     "Texas Roadhouse",
     "Northern Taphouse",
     "Fuji",
+    "Mancino's",
   ],
 };
 
