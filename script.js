@@ -100,6 +100,7 @@ const restaurantData = {
     "Northern Taphouse",
     "Fuji",
     "Mancino's",
+    "Cowboy Jack's",
   ],
 
   pizza: [
@@ -279,6 +280,7 @@ const restaurantData = {
     "Fuji",
     "Texas Roadhouse",
     "Northern Taphouse",
+    "Cowboy Jack's",
   ],
 
   allRestaurants: [
@@ -416,6 +418,7 @@ const restaurantData = {
     "Northern Taphouse",
     "Fuji",
     "Mancino's",
+    "Cowboy Jack's",
   ],
 };
 
